@@ -1,0 +1,49 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+ <script type="text/javascript" src="/js/lib/dummy.js"></script>
+<title>Medicare</title>
+</head>
+<body background="icons/medicare.jpg">
+<script type="text/javascript">
+	
+//<![CDATA[
+window.onload=function(){
+document.mainForm.onclick = function(){
+    var radVal = document.mainForm.rads.value;
+    result.innerHTML = window.open(radVal);
+}
+}//]]> 
+</script>
+<center>
+<form id="mainForm" name="mainForm" align="center">
+<table id="tab1">
+<fieldset id="f1">
+ <legend><font face="calibri" size="4">
+    <b>Παρακαλώ επιλέξτε την ιδιότητα σας</b></font></legend>
+	  <div>
+	  <font face="calibri" size="4"><br>
+	  <b>Γραμματειακός Υπάλληλος</b>
+	  </font>
+        <input type="radio" name="rads" value="eisodos2.html" />
+      </div>
+	  <div>
+<font face="calibri" size="4"><br>
+<b> Γιατρός</b>
+</font>
+        <input type="radio" name="rads" value="eisodos.html" />
+		</div>
+  </form>
+</fieldset>
+</table>
+<span id="result"></span>
+</center>
+<div class="footer">
+<hr>
+&copy Medicare
+</div>
+</body>
+</html>
